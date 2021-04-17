@@ -1,0 +1,138 @@
+* {
+    margin: 1px;
+    padding: 1px;
+}
+
+.button {
+    background-color:cornflowerblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#fondo {
+    background: url(../Imagenes/fondo.jpg) no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: rgb(154, 189, 235);
+    text-align: center;
+}
+
+#img { 
+    border-radius: 13px;
+    box-shadow: gray 6px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#banner {
+    background-color: rgb(236, 92, 224);
+}
+
+#banner ol {
+    list-style: none;
+    display: inline-flex;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#banner ol li{
+    font-style: italic;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 100px;
+}
+#banner ol li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#tarjetas {
+    display: inline-flex;
+}
+
+#tarjetas div i {
+    margin-left: 125px;
+}
+
+.card {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    background-color: lightblue;
+    margin-left: 60px;
+    animation: tarjetas 1000ms ease-in;
+    animation-fill-mode: forwards;
+    transform: translateX(-50px);
+    opacity: 0;
+}
+
+.card:hover {
+    background-color: lightcoral;
+    width: 270px;
+    height: 180px;
+    cursor: pointer;
+    animation: animacion 1000ms ease-in;
+    animation-fill-mode: forwards;
+    transform: translateX(-50px);
+    opacity: 0;
+}
+
+.content {
+    display: inline-flex;
+}
+
+#contenido {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: rgba(250, 235, 215, 0.527);
+}
+
+#contenido h2 {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+}
+
+#contenido p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    font-style: italic;
+    color: black;
+}
+
+#contacto {
+    text-align: center;
+}
+
+#tabla {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tabla tr td a {
+    margin-left: 20px;
+    color: black;
+}
+
+
+/*************** ANIMACIONES ***************/
+@keyframes tarjetas {
+    0% { transform: translateX(100px); opacity: 0;}
+    100% {transform: translateX(0px); opacity: 1;}
+}
+
+@keyframes animacion {
+    0% { transform: translateX(0px); opacity: 0;}
+    100% {transform: translateX(10px); opacity: 1;}
+}
+
